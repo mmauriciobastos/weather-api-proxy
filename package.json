@@ -1,0 +1,19 @@
+{
+  "name": "weather-api-proxy",
+  "version": "1.0.0",
+  "description": "API proxy server for OpenWeather",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node --env-file=.env --watch src/index.js",
+    "start": "node --env-file=.env src/index.js"
+  },
+  "author": "Mauricio Bastos Abreu",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "needle": "^3.5.0"
+  }
+}
