@@ -12,6 +12,7 @@
   "author": "Mauricio Bastos Abreu",
   "license": "MIT",
   "dependencies": {
+    "apicache": "^1.6.3",
     "cors": "^2.8.6",
     "express": "^5.2.1",
     "express-rate-limit": "^8.7.0",

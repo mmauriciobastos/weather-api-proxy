@@ -5,8 +5,15 @@ const API_NAME = process.env.OPEN_WEATHER_API_NAME;
 const API_BASE_URL = `${process.env.OPEN_WEATHER_API_BASE_URL}/${process.env.OPEN_WEATHER_API_TYPE_WEATHER}`;
 const ENV = process.env.NODE_ENV || 'production';
 const router = express.Router();
+import apiCache from 'apicache';
 
-router.get('/', async (req, res) => {
+// Cache middleware for 10 minutes
+const cache = apiCache.middleware;
+router.use(cache('10 minutes'));
+    
+    //router.get('/', cache('10 minutes'), async (req, res) => {
+
+    router.get('/', async (req, res) => {
     try {
         
         const params = new URLSearchParams({
