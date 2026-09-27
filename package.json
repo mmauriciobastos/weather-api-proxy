@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint",
     "dev": "node --env-file=.env --watch src/index.js",
     "start": "node --env-file=.env src/index.js"
   },
@@ -17,5 +18,10 @@
     "express": "^5.2.1",
     "express-rate-limit": "^8.7.0",
     "needle": "^3.5.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.11.0",
+    "globals": "^17.12.0"
   }
 }
