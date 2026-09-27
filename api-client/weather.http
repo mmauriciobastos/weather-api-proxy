@@ -1,4 +1,21 @@
-GET http://localhost:3000/api/weather?q=Vancouver
+# Main query to get weather data for a specific city and country code, with units in metric.
+
+GET http://localhost:3000/api/weather?q=Vancouver,BR&units=metric
+
+###
+
+GET http://localhost:3000/api/weather?q=Salvador,BR&units=metric
+
+###
+
+# Main query to get weather data for a specific city and country code, with units in imperial.
+
+GET http://localhost:3000/api/weather?q=Miami,US&units=imperial
+
+###
+
+GET http://localhost:3000/api/weather?units=metric&lat=-12.9876&lon=-38.4584
+
 
 ###
 
